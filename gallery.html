@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>
+   Gallery - Gobind Dance Academy
+  </title>
+<link href="assets/images/fab.png" rel="icon" type="image/png"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet"/>
+<link href="./css/style.css" rel="stylesheet"/>
+<link href="./css/gallery.css" rel="stylesheet"/>
+
+</head>
+
+<body>
+<div class="preloader">
+    <div class="preloader-logo">
+        <img src="assets/images/image-removebg-preview.png" alt="Gobind Dance Academy">
+    </div>
+    <div class="preloader-bar"><span></span></div>
+</div>
+
+<div class="scroll-progress"></div>
+
+<div class="cursor-glow"></div>
+
+<div class="nav-overlay"></div>
+
+<button class="back-to-top" aria-label="Back to top"><i class="fas fa-chevron-up"></i></button>
+
+<header>
+    <div class="logo-section">
+        <div class="logo">
+        <a href="index.html"><img src="assets/images/image-removebg-preview.png"></a>
+        </div>
+    </div>
+
+    <div class="hamburger" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <nav>
+    <div class="nav-links">
+        <a href="index.html">HOME</a>
+        <a href="about.html">ABOUT</a>
+        <a href="courses.html">COURSES</a>
+        <a href="gallery.html" class="active">GALLERY</a>
+        <a href="blog.html">BLOG</a>
+        <a href="contact.html">CONTACT</a>
+        <a href="schedule.html" class="nav-schedule-btn">SCHEDULE</a>
+    </div>
+    </nav>
+
+    <a href="schedule.html" class="schedule-btn ripple-btn">
+        <i class="fas fa-calendar-alt"></i> SCHEDULE
+    </a>
+</header>
+
+<section class="page-hero page-hero-gallery">
+    <div class="page-hero-overlay"></div>
+     <div class="page-hero-content">
+      <span class="section-label">
+       GALLERY
+      </span>
+      <h1>
+       Moments That
+       <em>
+        Move Us
+       </em>
+      </h1>
+      <p>
+       A visual journey through performances, rehearsals, and the vibrant community that makes GDA special.
+      </p>
+     </div>
+    </section>
+    <section class="gallery-section reveal">
+     <div class="section-header">
+      <p>
+       OUR WORK
+      </p>
+      <h2>
+       Captured in
+       <em>
+        Motion
+       </em>
+      </h2>
+      <div class="filter-bar">
+       <div class="filter-search">
+        <i class="fas fa-search">
+        </i>
+        <input class="filter-input" data-target="gallery-grid" placeholder="Search gallery..." type="text"/>
+       </div>
+       <div class="gallery-filters">
+        <button class="gallery-filter active" data-filter="all">All</button>
+        <button class="gallery-filter" data-filter="photo">Photos</button>
+        <button class="gallery-filter" data-filter="video">Videos</button>
+       </div>
+      </div>
+      <div class="gallery-grid">
+            <div class="gallery-item gallery-item--wide" data-type="photo">
+              <div class="gallery-placeholder" data-title="Performance at Kalakendra">
+                <div class="gallery-media">
+                  <img alt="Performance at Kalakendra" class="gallery-img" loading="lazy" src="assets/images/group.jpg"/>
+                  <div class="expand-icon"><i class="fas fa-expand"></i></div>
+                </div>
+              </div>
+            </div>
+            <div class="gallery-item" data-type="photo">
+              <div class="gallery-placeholder" data-title="Studio Session">
+                <div class="gallery-media">
+                  <img alt="Studio Session" class="gallery-img" loading="lazy" src="assets/images/gobind5.jpeg"/>
+                  <div class="expand-icon"><i class="fas fa-expand"></i></div>
+                </div>
+              </div>
+            </div>
+            <div class="gallery-item" data-type="video">
+              <div class="gallery-placeholder gallery-video" data-keywords="tamang society new york dance performance nepali cultural nyc" data-title="NYC Workshop" data-video="https://youtu.be/7DSjJb56ie8">
+                <div class="gallery-media">
+                  <img alt="NYC Workshop" class="gallery-img" loading="lazy" src="https://img.youtube.com/vi/7DSjJb56ie8/maxresdefault.jpg"/>
+                  <div class="expand-icon"><i class="fas fa-expand"></i></div>
+                </div>
+              </div>
+            </div>
+            <div class="gallery-item" data-type="photo">
+              <div class="gallery-placeholder" data-title="Film Shoot">
+                <div class="gallery-media">
+                  <img alt="Film Shoot" class="gallery-img" loading="lazy" src="assets/images/film.jpeg"/>
+                  <div class="expand-icon"><i class="fas fa-expand"></i></div>
+                </div>
+              </div>
+            </div>
+            <div class="gallery-item" data-type="video">
+              <div class="gallery-placeholder gallery-video" data-keywords="miss nepal north america 2025 kathak dance semi final nepali cultural performance" data-title="Miss Nepal North America 2025" data-video="https://www.youtube.com/watch?v=OE996tQpbbs">
+                <div class="gallery-media">
+                  <img alt="Miss Nepal North America 2025" class="gallery-img" loading="lazy" src="https://img.youtube.com/vi/OE996tQpbbs/maxresdefault.jpg"/>
+                  <div class="expand-icon"><i class="fas fa-expand"></i></div>
+                </div>
+              </div>
+            </div>
+            <div class="gallery-item" data-type="video">
+              <div class="gallery-placeholder gallery-video" data-keywords="gobind dance center culture show performance cultural nepali traditional" data-title="Gobind Dance Center Culture Show" data-video="https://youtu.be/7gANqWb60sM">
+                <div class="gallery-media">
+                  <img alt="Gobind Dance Center Culture Show" class="gallery-img" loading="lazy" src="https://img.youtube.com/vi/7gANqWb60sM/maxresdefault.jpg"/>
+                  <div class="expand-icon"><i class="fas fa-expand"></i></div>
+                </div>
+              </div>
+            </div>
+            <div class="gallery-item" data-type="photo">
+              <div class="gallery-placeholder" data-title="Competition">
+                <div class="gallery-media">
+                  <img alt="Competition" class="gallery-img" loading="lazy" src="assets/images/4e8510a8-af41-4be0-a759-9cf8679da20e.jpg"/>
+                  <div class="expand-icon"><i class="fas fa-expand"></i></div>
+                </div>
+              </div>
+            </div>
+            <div class="gallery-item gallery-item--wide" data-type="photo">
+              <div class="gallery-placeholder" data-title="Award Ceremony">
+                <div class="gallery-media">
+                  <img alt="Award Ceremony" class="gallery-img" loading="lazy" src="assets/images/gobind1.jpg"/>
+                  <div class="expand-icon"><i class="fas fa-expand"></i></div>
+                </div>
+              </div>
+            </div>
+            <div class="gallery-item" data-type="photo">
+              <div class="gallery-placeholder" data-title="Dance Rehearsal">
+                <div class="gallery-media">
+                  <img alt="Dance Rehearsal" class="gallery-img" loading="lazy" src="assets/images/group2.jpg"/>
+                  <div class="expand-icon"><i class="fas fa-expand"></i></div>
+                </div>
+              </div>
+            </div>
+            <div class="gallery-item" data-type="photo">
+              <div class="gallery-placeholder" data-title="Group Gathering">
+                <div class="gallery-media">
+                  <img alt="Group Gathering" class="gallery-img" loading="lazy" src="assets/images/group4.jpg"/>
+                  <div class="expand-icon"><i class="fas fa-expand"></i></div>
+                </div>
+              </div>
+            </div>
+            <div class="gallery-item" data-type="photo">
+              <div class="gallery-placeholder" data-title="Pose">
+                <div class="gallery-media">
+                  <img alt="Pose" class="gallery-img" loading="lazy" src="assets/images/gobind3.jpeg"/>
+                  <div class="expand-icon"><i class="fas fa-expand"></i></div>
+                </div>
+              </div>
+            </div>
+            <div class="gallery-item" data-type="photo">
+              <div class="gallery-placeholder" data-title="Portrait">
+                <div class="gallery-media">
+                  <img alt="Portrait" class="gallery-img" loading="lazy" src="assets/images/gobind4.jpeg"/>
+                  <div class="expand-icon"><i class="fas fa-expand"></i></div>
+                </div>
+              </div>
+            </div>
+            <div class="gallery-item" data-type="photo">
+              <div class="gallery-placeholder" data-title="Performance Still">
+                <div class="gallery-media">
+                  <img alt="Performance Still" class="gallery-img" loading="lazy" src="assets/images/gobind6.jpeg"/>
+                  <div class="expand-icon"><i class="fas fa-expand"></i></div>
+                </div>
+              </div>
+            </div>
+            <div class="gallery-item" data-type="photo">
+              <div class="gallery-placeholder" data-title="Candid Shot">
+                <div class="gallery-media">
+                  <img alt="Candid Shot" class="gallery-img" loading="lazy" src="assets/images/image.jpg"/>
+                  <div class="expand-icon"><i class="fas fa-expand"></i></div>
+                </div>
+              </div>
+            </div>
+            <div class="gallery-item" data-type="video">
+              <div class="gallery-placeholder gallery-video" data-keywords="melina rai gobind dance center music video shoot nepali song" data-title="Melina Rai & Gobind Dance Center" data-video="https://www.youtube.com/watch?v=dLxB-AMpM2Q">
+                <div class="gallery-media">
+                  <img alt="Melina Rai & Gobind Dance Center" class="gallery-img" loading="lazy" src="https://img.youtube.com/vi/dLxB-AMpM2Q/maxresdefault.jpg"/>
+                  <div class="expand-icon"><i class="fas fa-expand"></i></div>
+                </div>
+              </div>
+            </div>
+            <div class="gallery-item" data-type="photo">
+              <div class="gallery-placeholder" data-title="Cultural Performance">
+                <div class="gallery-media">
+                  <img alt="Cultural Performance" class="gallery-img" loading="lazy" src="assets/images/985feac7-4a56-4d56-a254-5fe2a441a78d.jpg"/>
+                  <div class="expand-icon"><i class="fas fa-expand"></i></div>
+                </div>
+              </div>
+            </div>
+            <div class="gallery-item" data-type="photo">
+              <div class="gallery-placeholder" data-title="Behind Stage">
+                <div class="gallery-media">
+                  <img alt="Behind Stage" class="gallery-img" loading="lazy" src="assets/images/Group.jpg"/>
+                  <div class="expand-icon"><i class="fas fa-expand"></i></div>
+                </div>
+              </div>
+            </div>
+            <div class="gallery-item" data-type="photo">
+              <div class="gallery-placeholder" data-title="Festival Dance">
+                <div class="gallery-media">
+                  <img alt="Festival Dance" class="gallery-img" loading="lazy" src="assets/images/group3.jpg"/>
+                  <div class="expand-icon"><i class="fas fa-expand"></i></div>
+                </div>
+              </div>
+            </div>
+            <div class="gallery-item" data-type="photo">
+              <div class="gallery-placeholder" data-title="Dance Pose">
+                <div class="gallery-media">
+                  <img alt="Dance Pose" class="gallery-img" loading="lazy" src="assets/images/64461106-fc4a-4b35-b5ac-8004da27a58f%20(1).jpg"/>
+                  <div class="expand-icon"><i class="fas fa-expand"></i></div>
+                </div>
+              </div>
+            </div>
+            <div class="gallery-item" data-type="video">
+              <div class="gallery-placeholder gallery-video" data-keywords="welcome gobind dance center new york city dance studio" data-title="Welcome to Gobind Dance Center" data-video="https://youtu.be/bfTbSXu_G_Q">
+                <div class="gallery-media">
+                  <img alt="Welcome to Gobind Dance Center" class="gallery-img" loading="lazy" src="https://img.youtube.com/vi/bfTbSXu_G_Q/maxresdefault.jpg"/>
+                  <div class="expand-icon"><i class="fas fa-expand"></i></div>
+                </div>
+              </div>
+            </div>
+            <div class="gallery-item" data-type="video">
+              <div class="gallery-placeholder gallery-video" data-keywords="nepali dance performance cultural traditional new york" data-title="Nepali Dance" data-video="https://youtu.be/i91inVA3U6A">
+                <div class="gallery-media">
+                  <img alt="Nepali Dance" class="gallery-img" loading="lazy" src="https://img.youtube.com/vi/i91inVA3U6A/maxresdefault.jpg"/>
+                  <div class="expand-icon"><i class="fas fa-expand"></i></div>
+                </div>
+              </div>
+            </div>
+            <div class="gallery-item" data-type="video">
+              <div class="gallery-placeholder gallery-video" data-keywords="impromptu subway dance new york city public performance" data-title="Impromptu Subway Dance" data-video="https://youtu.be/PwETCXVmgtA">
+                <div class="gallery-media">
+                  <img alt="Impromptu Subway Dance" class="gallery-img" loading="lazy" src="https://img.youtube.com/vi/PwETCXVmgtA/maxresdefault.jpg"/>
+                  <div class="expand-icon"><i class="fas fa-expand"></i></div>
+                </div>
+              </div>
+            </div>
+            <div class="gallery-item" data-type="video">
+              <div class="gallery-placeholder gallery-video" data-keywords="philippine artist jameelah rose collaboration dance" data-title="Philippine Artist Jameelah Rose" data-video="https://youtu.be/4znNmcmUFnY">
+                <div class="gallery-media">
+                  <img alt="Philippine Artist Jameelah Rose" class="gallery-img" loading="lazy" src="https://img.youtube.com/vi/4znNmcmUFnY/maxresdefault.jpg"/>
+                  <div class="expand-icon"><i class="fas fa-expand"></i></div>
+                </div>
+              </div>
+            </div>
+            <div class="gallery-item" data-type="video">
+              <div class="gallery-placeholder gallery-video" data-keywords="sunfuliya mushari gaun dance performance nepali song" data-title="Sunfuliya in the Mushar Gaun" data-video="https://youtu.be/808X-YyhH4A">
+                <div class="gallery-media">
+                  <img alt="Sunfuliya in the Mushar Gaun" class="gallery-img" loading="lazy" src="https://img.youtube.com/vi/808X-YyhH4A/maxresdefault.jpg"/>
+                  <div class="expand-icon"><i class="fas fa-expand"></i></div>
+                </div>
+              </div>
+            </div>
+            <div class="gallery-item" data-type="video">
+              <div class="gallery-placeholder gallery-video" data-keywords="actor harshika shrestha dance collaboration nepali" data-title="Actor Harshika Shrestha" data-video="https://youtu.be/bNg--JxSJhA">
+                <div class="gallery-media">
+                  <img alt="Actor Harshika Shrestha" class="gallery-img" loading="lazy" src="https://img.youtube.com/vi/bNg--JxSJhA/maxresdefault.jpg"/>
+                  <div class="expand-icon"><i class="fas fa-expand"></i></div>
+                </div>
+              </div>
+            </div>
+            <div class="gallery-item" data-type="video">
+              <div class="gallery-placeholder gallery-video" data-keywords="art and culture dance performance nepali traditional" data-title="Art and Culture" data-video="https://youtu.be/BQbLCwJkXIY">
+                <div class="gallery-media">
+                  <img alt="Art and Culture" class="gallery-img" loading="lazy" src="https://img.youtube.com/vi/BQbLCwJkXIY/maxresdefault.jpg"/>
+                  <div class="expand-icon"><i class="fas fa-expand"></i></div>
+                </div>
+              </div>
+            </div>
+            <div class="gallery-item" data-type="video">
+              <div class="gallery-placeholder gallery-video" data-keywords="dance director choreography performance" data-title="Dance and Director" data-video="https://youtu.be/bTFfhVpCw9k">
+                <div class="gallery-media">
+                  <img alt="Dance and Director" class="gallery-img" loading="lazy" src="https://img.youtube.com/vi/bTFfhVpCw9k/maxresdefault.jpg"/>
+                  <div class="expand-icon"><i class="fas fa-expand"></i></div>
+                </div>
+              </div>
+            </div>
+            <div class="gallery-item" data-type="video">
+              <div class="gallery-placeholder gallery-video" data-keywords="welcome gobind dance center studio tour dance" data-title="Welcome to Gobind Dance Center" data-video="https://youtu.be/CvnythjOqhc">
+                <div class="gallery-media">
+                  <img alt="Welcome to Gobind Dance Center" class="gallery-img" loading="lazy" src="https://img.youtube.com/vi/CvnythjOqhc/maxresdefault.jpg"/>
+                  <div class="expand-icon"><i class="fas fa-expand"></i></div>
+                </div>
+              </div>
+            </div>
+            <div class="gallery-item" data-type="video">
+              <div class="gallery-placeholder gallery-video" data-keywords="shooting vlog music video behind the scenes" data-title="Shooting Vlog of Music Video" data-video="https://youtu.be/E-N3YFsFAcY">
+                <div class="gallery-media">
+                  <img alt="Shooting Vlog of Music Video" class="gallery-img" loading="lazy" src="https://img.youtube.com/vi/E-N3YFsFAcY/maxresdefault.jpg"/>
+                  <div class="expand-icon"><i class="fas fa-expand"></i></div>
+                </div>
+              </div>
+            </div>
+            <div class="gallery-item" data-type="video">
+              <div class="gallery-placeholder gallery-video" data-keywords="dance director nature love performance" data-title="Dance Director and Nature's Love" data-video="https://youtu.be/GkVwznKVHYY">
+                <div class="gallery-media">
+                  <img alt="Dance Director and Nature's Love" class="gallery-img" loading="lazy" src="https://img.youtube.com/vi/GkVwznKVHYY/maxresdefault.jpg"/>
+                  <div class="expand-icon"><i class="fas fa-expand"></i></div>
+                </div>
+              </div>
+            </div>
+            <div class="gallery-item" data-type="video">
+              <div class="gallery-placeholder gallery-video" data-keywords="actress melina manandhar dance collaboration" data-title="Actress Melina Manandhar" data-video="https://youtu.be/k1Aivj4rbR0">
+                <div class="gallery-media">
+                  <img alt="Actress Melina Manandhar" class="gallery-img" loading="lazy" src="https://img.youtube.com/vi/k1Aivj4rbR0/maxresdefault.jpg"/>
+                  <div class="expand-icon"><i class="fas fa-expand"></i></div>
+                </div>
+              </div>
+            </div>
+            <div class="gallery-item" data-type="video">
+              <div class="gallery-placeholder gallery-video" data-keywords="basic dance nepali song tutorial performance" data-title="Basic Dance to Nepali Song" data-video="https://youtu.be/o8C2e2nAc-Y">
+                <div class="gallery-media">
+                  <img alt="Basic Dance to Nepali Song" class="gallery-img" loading="lazy" src="https://img.youtube.com/vi/o8C2e2nAc-Y/maxresdefault.jpg"/>
+                  <div class="expand-icon"><i class="fas fa-expand"></i></div>
+                </div>
+              </div>
+            </div>
+            <div class="gallery-item" data-type="video">
+              <div class="gallery-placeholder gallery-video" data-keywords="nepal day parade 2026 new york city celebration" data-title="Nepal Day Parade 2026" data-video="https://youtu.be/pi4iemudCnk">
+                <div class="gallery-media">
+                  <img alt="Nepal Day Parade 2026" class="gallery-img" loading="lazy" src="https://img.youtube.com/vi/pi4iemudCnk/maxresdefault.jpg"/>
+                  <div class="expand-icon"><i class="fas fa-expand"></i></div>
+                </div>
+              </div>
+            </div>
+            <div class="gallery-item" data-type="video">
+              <div class="gallery-placeholder gallery-video" data-keywords="ranjita gurung busy new york dance performance" data-title="Ranjita Gurung Busy in New York" data-video="https://youtu.be/s2tuVvERNLo">
+                <div class="gallery-media">
+                  <img alt="Ranjita Gurung Busy in New York" class="gallery-img" loading="lazy" src="https://img.youtube.com/vi/s2tuVvERNLo/maxresdefault.jpg"/>
+                  <div class="expand-icon"><i class="fas fa-expand"></i></div>
+                </div>
+              </div>
+            </div>
+            <div class="gallery-item" data-type="video">
+              <div class="gallery-placeholder gallery-video" data-keywords="richa tamang birthday dance performance celebration event" data-title="Sweet 16 of Richa's Tamang" data-video="https://youtu.be/SZtYD0Zg4Gs">
+                <div class="gallery-media">
+                  <img alt="Sweet 16 of Richa's Tamang" class="gallery-img" loading="lazy" src="https://img.youtube.com/vi/SZtYD0Zg4Gs/maxresdefault.jpg"/>
+                  <div class="expand-icon"><i class="fas fa-expand"></i></div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </section>
+
+<footer class="footer">
+    <div class="footer-container">
+
+        <!-- Company Info -->
+        <div class="footer-col"> 
+            <div class="footer-logo">
+                <a href="index.html">
+                <div class="logo-box">
+                    <img src="assets/images/image-removebg-preview.png" alt="Gobind Dance Academy">
+                </div>
+                </a>
+            </div>
+
+            <p>
+                Preserving heritage through movement. Over three decades of
+                cinematic choreography, cultural education, and artistic excellence.
+            </p>
+
+            <div class="social-icons">
+                <a href="https://www.facebook.com/gobind.rai.5"><i class="fab fa-facebook-f"></i><span class="si-label">Facebook</span></a>
+                <a href="https://www.youtube.com/@GobindRaiEntertainment"><i class="fab fa-youtube"></i><span class="si-label">YouTube</span></a>
+                <a href="https://www.instagram.com/gobind.rai.entertainment/"><i class="fab fa-instagram"></i><span class="si-label">Instagram</span></a>
+                <a href="https://www.tiktok.com/@gobindrai11"><i class="fab fa-tiktok"></i><span class="si-label">TikTok</span></a>
+                <a href="https://api.whatsapp.com/send/?phone=19296417574&text&type=phone_number&app_absent=0"><i class="fab fa-whatsapp"></i><span class="si-label">WhatsApp</span></a>
+            </div>
+
+        </div>
+
+        <!-- Navigation -->
+        <div class="footer-col">
+            <h4>NAVIGATION</h4>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="schedule.html">Book Audition</a></li>
+            </ul>
+        </div>
+
+        <!-- Programs -->
+        <div class="footer-col">
+            <h4>PROGRAMS</h4>
+            <ul>
+                <li><a href="courses.html">Traditional Nepali Folk</a></li>
+                <li><a href="courses.html">Bollywood Choreography</a></li>
+                <li><a href="courses.html">Semi-Classical Foundations</a></li>
+                <li><a href="courses.html">Private Lessons</a></li>
+                <li><a href="courses.html">Competition Prep</a></li>
+                <li><a href="courses.html">Film Set Training</a></li>
+            </ul>
+        </div>
+
+        <!-- Contact -->
+        <div class="footer-col">
+            <h4>STUDIO</h4>
+
+            <p><a href="https://maps.google.com/?q=40-08+76th+St+Elmhurst+NY+11373" target="_blank" rel="noopener">📍 Gobind Dance Center<br>
+                  40-08 76th St, Elmhurst<br>
+                  New York City, USA</a></p>
+
+            <p><a href="tel:9849158018">📞 9849158018</a></p>
+
+            <a href="contact.html" class="footer-btn ripple-btn">
+                BOOK A SESSION <i class="fas fa-arrow-right"></i>
+            </a>
+
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 Gobind Dance Academy. All rights reserved.</p>
+        <p class="footer-tm">Made by MIH Group</p>
+    </div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>

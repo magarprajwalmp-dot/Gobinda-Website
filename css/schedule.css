@@ -1,0 +1,291 @@
+/* HERO SLIDESHOW */
+.page-hero-gallery {
+    position: relative;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: gallery-bg 24s infinite;
+}
+
+@keyframes gallery-bg {
+    0%, 20%   { background: url('../assets/images/group.jpg') center/cover no-repeat; }
+    25%, 45%  { background: url('../assets/images/group1.jpg') center/cover no-repeat; }
+    50%, 70%  { background: url('../assets/images/group2.jpg') center/cover no-repeat; }
+    75%, 95%  { background: url('../assets/images/Dance.jpg') center/cover no-repeat; }
+    100%      { background: url('../assets/images/group6.jpg') center/cover no-repeat; }
+}
+
+.page-hero-gallery .page-hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.page-hero-gallery .page-hero-content .section-label,
+.page-hero-gallery .page-hero-content p {
+    color: rgba(255,255,255,0.85);
+}
+
+.page-hero-gallery .page-hero-content h1 {
+    color: #fff;
+}
+
+.page-hero-gallery .page-hero-content h1 em {
+    color: #f0c27a;
+}
+
+/* GALLERY */
+.gallery-section {
+    padding: 100px 8%;
+    background: linear-gradient(135deg, #f0ece8 0%, #faf8f6 50%, #f5f0ea 100%);
+}
+
+.gallery-filters {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 50px;
+}
+
+.gallery-filter {
+    padding: 12px 32px;
+    border: 1px solid rgba(255,255,255,0.4);
+    background: rgba(255,255,255,0.25);
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    border-radius: 30px;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    letter-spacing: 2px;
+    color: #666;
+    transition: transform 0.45s cubic-bezier(0.34, 1.56, 0.64, 1),
+                background 0.4s ease,
+                box-shadow 0.4s ease,
+                border-color 0.4s ease,
+                color 0.4s ease;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.04), inset 0 1px 0 rgba(255,255,255,0.5);
+    position: relative;
+    overflow: hidden;
+}
+
+.gallery-filter::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(105deg,
+        transparent 30%,
+        rgba(255,255,255,0.15) 35%,
+        rgba(255,255,255,0.3) 40%,
+        rgba(255,255,255,0.15) 45%,
+        transparent 50%
+    );
+    transform: translateX(-80%) rotate(20deg);
+    transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    pointer-events: none;
+}
+
+.gallery-filter:hover::after {
+    transform: translateX(80%) rotate(20deg);
+}
+
+.gallery-filter:hover {
+    background: rgba(255,255,255,0.45);
+    border-color: rgba(202,131,55,0.3);
+    color: #333;
+    box-shadow: 0 12px 40px rgba(0,0,0,0.08), inset 0 1px 0 rgba(255,255,255,0.6);
+    transform: scale(1.06);
+}
+
+.gallery-filter:active {
+    transform: scale(0.96);
+    transition-duration: 0.15s;
+}
+
+.gallery-filter.active {
+    background: rgba(34,60,133,0.85);
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    color: #fff;
+    border-color: rgba(255,255,255,0.2);
+    box-shadow: 0 6px 30px rgba(34,60,133,0.25), inset 0 1px 0 rgba(255,255,255,0.15);
+}
+
+.gallery-filter.active::after {
+    display: none;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 253.65px;
+    grid-auto-flow: dense;
+    gap: 16px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.gallery-item--wide {
+    grid-column: span 2;
+}
+
+.gallery-item--tall {
+    grid-row: span 2;
+}
+
+.gallery-item--wide.gallery-item--tall {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.gallery-placeholder {
+    position: relative;
+    height: 100%;
+    background: rgba(255,255,255,0.3);
+    backdrop-filter: blur(10px) saturate(160%);
+    -webkit-backdrop-filter: blur(10px) saturate(160%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 0.4s;
+    cursor: pointer;
+    border: 1px solid rgba(255,255,255,0.5);
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.04);
+    overflow: hidden;
+}
+
+.gallery-placeholder:hover {
+    transform: scale(1.02);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+    background: rgba(255,255,255,0.5);
+    border-color: rgba(202,131,55,0.2);
+}
+
+.gallery-icon {
+    font-size: 40px;
+    margin-bottom: 12px;
+    transition: transform 0.3s;
+}
+
+.gallery-placeholder:hover .gallery-icon {
+    transform: scale(1.15);
+}
+
+.gallery-placeholder p {
+    color: #888;
+    font-size: 13px;
+    letter-spacing: 2px;
+    text-align: center;
+    padding: 0 10px;
+}
+
+.gallery-video {
+    background: linear-gradient(135deg, rgba(255,255,255,0.25), rgba(255,255,255,0.15));
+    border-color: rgba(202,131,55,0.2);
+}
+
+.gallery-item.hidden {
+    display: none;
+}
+
+/* GALLERY ITEM ENHANCED */
+.gallery-placeholder .gallery-img,
+.gallery-placeholder .gallery-video-el {
+    transition: transform 0.4s ease;
+}
+
+.gallery-placeholder:hover .gallery-img,
+.gallery-placeholder:hover .gallery-video-el {
+    transform: scale(1.05);
+}
+
+/* TIMELINE DOT PULSE */
+.timeline-content::before {
+    animation: pulse-dot 2s ease-in-out infinite;
+}
+
+@keyframes pulse-dot {
+    0%, 100% { box-shadow: 0 0 0 0 rgba(202,131,55,0.4); }
+    50% { box-shadow: 0 0 0 8px rgba(202,131,55,0); }
+}
+
+/* GALLERY MEDIA HOLDERS */
+.gallery-media {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.gallery-img,
+.gallery-video-el {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    inset: 0;
+}
+
+.gallery-item[data-type="video"] .gallery-placeholder {
+    background: #1a1a1a;
+}
+
+.gallery-item[data-type="video"] .gallery-video-el,
+.gallery-item[data-type="video"] .gallery-img {
+    object-fit: cover;
+}
+
+/* RESPONSIVE GALLERY */
+@media(max-width: 768px) {
+    .gallery-section {
+        padding: 60px 5%;
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 200px;
+        gap: 12px;
+    }
+
+    .gallery-item--wide {
+        grid-column: span 2;
+    }
+}
+
+@media(max-width: 480px) {
+    .gallery-grid {
+        grid-template-columns: 1fr;
+        grid-auto-rows: 220px;
+        gap: 14px;
+    }
+
+    .gallery-item--wide,
+    .gallery-item--tall,
+    .gallery-item--wide.gallery-item--tall {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+
+    .gallery-filters {
+        gap: 6px;
+        margin-bottom: 24px;
+        flex-wrap: wrap;
+    }
+
+    .gallery-filter {
+        padding: 8px 16px;
+        font-size: 11px;
+    }
+
+    .gallery-placeholder {
+        border-radius: 12px;
+    }
+}
