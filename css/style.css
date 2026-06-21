@@ -392,6 +392,26 @@ nav .nav-links a.active::after{
     }
 }
 
+@keyframes iconGlow {
+    0%, 100% {
+        background: linear-gradient(135deg, var(--primary-color), #d4a055);
+        box-shadow: 0 0 20px rgba(202,131,55,0.2);
+    }
+    25% {
+        background: linear-gradient(135deg, #d4a055, #e8c076);
+        box-shadow: 0 0 30px rgba(212,160,85,0.4);
+    }
+    50% {
+        background: linear-gradient(135deg, #e8c076, #f0d090);
+        box-shadow: 0 0 40px rgba(232,192,118,0.5);
+        transform: scale(1.08);
+    }
+    75% {
+        background: linear-gradient(135deg, #d4a055, #ca8337);
+        box-shadow: 0 0 30px rgba(202,131,55,0.4);
+    }
+}
+
 /* Glass header effect when scrolling */
 header.scrolled nav .nav-links a,
 header.scrolled .logo-text p,
@@ -427,6 +447,7 @@ header.scrolled .schedule-btn {
     box-shadow: 0 4px 20px rgba(0,0,0,0.05);
     border: 1px solid rgba(0,0,0,0.04);
     transition: all 0.3s ease;
+    height: 100%;
 }
 
 .stat-box:hover {
@@ -446,6 +467,8 @@ header.scrolled .schedule-btn {
     font-size: 20px;
     color: #fff;
     margin-bottom: 16px;
+    animation: iconGlow 3s ease-in-out infinite;
+    box-shadow: 0 0 20px rgba(202,131,55,0.2);
 }
 
 .stat-box:last-child {
