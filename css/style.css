@@ -1178,31 +1178,79 @@ header.scrolled .schedule-btn {
     }
 
     .footer-container {
-        grid-template-columns: 1fr;
-        gap: 28px;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 16px;
         padding-bottom: 30px;
+        width: 95%;
     }
 
     .footer-col ul {
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 4px;
+        grid-template-columns: 1fr;
+        gap: 2px;
     }
 
     .footer-col ul li {
         margin-bottom: 0;
+        font-size: 11px;
     }
 
     .footer-btn {
         width: 100%;
         text-align: center;
+        padding: 10px 16px;
+        font-size: 10px;
     }
-    
+
+    .footer-logo {
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    .logo-box {
+        height: 60px;
+        padding: 0 10px;
+    }
+
+    .footer-logo h3 {
+        font-size: 13px;
+        letter-spacing: 1px;
+    }
+
+    .footer-logo span {
+        font-size: 9px;
+    }
+
+    .footer-col p {
+        font-size: 10px;
+        margin-bottom: 10px;
+        line-height: 1.5;
+    }
+
+    .footer-col h4 {
+        font-size: 10px;
+        margin-bottom: 10px;
+        letter-spacing: 1.5px;
+    }
+
+    .social-icons {
+        gap: 4px;
+        flex-wrap: wrap;
+    }
+
+    .social-icons a {
+        width: 28px;
+        height: 28px;
+        font-size: 11px;
+        border-radius: 6px;
+    }
+
     .footer-bottom {
         flex-direction: column;
         gap: 6px;
-        padding: 20px 5%;
+        padding: 16px 5%;
         text-align: center;
+        font-size: 10px;
     }
     
     .footer-tm {
@@ -3619,9 +3667,7 @@ header.scrolled {
         grid-template-columns: 1fr;
     }
 
-    .hero-right {
-        order: -1;
-    }
+
 
     .hero-left {
         height: auto;
