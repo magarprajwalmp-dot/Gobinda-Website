@@ -223,8 +223,10 @@ nav .nav-links a.active::after{
 
 .primary-btn{
     text-decoration:none;
-    background: linear-gradient(135deg, #ca8337 0%, #b87028 40%, #d4a055 70%, #ca8337 100%);
-    background-size: 300% 300%;
+    background:
+        linear-gradient(135deg, rgba(255,255,255,0.1) 0%, transparent 50%),
+        linear-gradient(135deg, #ca8337 0%, #b87028 30%, #d4a055 60%, #b87028 85%, #ca8337 100%);
+    background-size: 300% 300%, 200% 200%;
     color: #fff;
     padding:22px 44px;
     letter-spacing:2.5px;
@@ -237,8 +239,9 @@ nav .nav-links a.active::after{
     cursor:pointer;
     border-radius:14px;
     box-shadow: 0 4px 15px rgba(202,131,55,0.3),
-                inset 0 1px 0 rgba(255,255,255,0.3),
-                inset 0 -2px 0 rgba(0,0,0,0.15);
+                0 2px 4px rgba(0,0,0,0.1),
+                inset 0 1px 0 rgba(255,255,255,0.35),
+                inset 0 -2px 0 rgba(0,0,0,0.2);
     position: relative;
     overflow: hidden;
 }
@@ -246,37 +249,56 @@ nav .nav-links a.active::after{
     content: '';
     position: absolute;
     inset: 0;
-    background: linear-gradient(135deg, rgba(255,255,255,0.15) 0%, transparent 50%);
+    background: linear-gradient(135deg, rgba(255,255,255,0.18) 0%, rgba(255,255,255,0.05) 40%, transparent 60%);
     border-radius: inherit;
     pointer-events: none;
 }
+.primary-btn::after {
+    content: '';
+    position: absolute;
+    inset: 2px;
+    border-radius: 12px;
+    background: linear-gradient(180deg, rgba(255,255,255,0.08) 0%, transparent 40%, rgba(0,0,0,0.06) 100%);
+    pointer-events: none;
+}
 .primary-btn i {
-    font-size: 16px;
-    transition: transform 0.5s cubic-bezier(0.34,1.56,0.64,1);
+    font-size: 18px;
+    transition: transform 0.6s cubic-bezier(0.34,1.56,0.64,1);
 }
 .primary-btn:hover,
 .primary-btn:focus{
-    background: linear-gradient(135deg, #d4954a 0%, #ca8337 40%, #e0b06a 70%, #d4954a 100%);
-    background-size: 300% 300%;
+    background:
+        linear-gradient(135deg, rgba(255,255,255,0.12) 0%, transparent 50%),
+        linear-gradient(135deg, #d4954a 0%, #ca8337 30%, #e0b06a 60%, #ca8337 85%, #d4954a 100%);
+    background-size: 300% 300%, 200% 200%;
     color: #fff;
-    transform: translateY(-3px) scale(1.03);
-    box-shadow: 0 12px 35px rgba(202,131,55,0.45),
-                inset 0 1px 0 rgba(255,255,255,0.35),
-                inset 0 -2px 0 rgba(0,0,0,0.15);
-    animation: btnGradientShift 2s ease infinite;
+    transform: translateY(-4px) scale(1.04);
+    box-shadow: 0 16px 40px rgba(202,131,55,0.45),
+                0 4px 8px rgba(0,0,0,0.1),
+                inset 0 1px 0 rgba(255,255,255,0.4),
+                inset 0 -2px 0 rgba(0,0,0,0.2);
+    animation: btnGradientShift 2.5s ease infinite;
 }
 .primary-btn:hover i {
-    transform: translateX(4px) scale(1.15);
+    transform: translateX(6px) scale(1.2) rotate(-10deg);
+    animation: iconBob 0.6s ease infinite alternate;
 }
 .primary-btn:active {
     transform: translateY(-1px) scale(0.98);
-    box-shadow: 0 4px 12px rgba(202,131,55,0.3);
+    box-shadow: 0 4px 12px rgba(202,131,55,0.3),
+                inset 0 1px 0 rgba(255,255,255,0.2),
+                inset 0 -1px 0 rgba(0,0,0,0.15);
 }
 
 @keyframes btnGradientShift {
-    0%   { background-position: 0% 50%; }
-    50%  { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
+    0%   { background-position: 0% 50%, 0% 50%; }
+    50%  { background-position: 100% 50%, 100% 50%; }
+    100% { background-position: 0% 50%, 0% 50%; }
+}
+
+@keyframes iconBob {
+    0%   { transform: translateX(6px) scale(1.2) rotate(-10deg); }
+    100% { transform: translateX(10px) scale(1.25) rotate(-5deg); }
 }
 
 .secondary-btn{
