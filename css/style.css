@@ -556,7 +556,7 @@ header.scrolled .schedule-btn {
 
 .testimonials{
     padding:120px 8%;
-    background: linear-gradient(135deg, #f0ece8 0%, #faf8f6 50%, #f5f0ea 100%);
+    background: linear-gradient(135deg, #f5f0ea 0%, #faf8f6 50%, #f0ece8 100%);
     position: relative;
 }
 
@@ -3078,6 +3078,7 @@ html {
     .testimonial-wrap {
         position: relative;
         overflow: hidden;
+        padding: 12px 0;
         touch-action: pan-y;
     }
 
