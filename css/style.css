@@ -1602,24 +1602,6 @@ header.scrolled .schedule-btn {
     flex-grow: 1;
 }
 
-.course-features {
-    list-style: none;
-    padding: 0;
-    margin-bottom: 30px;
-}
-
-.course-features li {
-    padding: 8px 0;
-    color: #555;
-    font-size: 14px;
-    border-bottom: 1px solid rgba(0,0,0,0.06);
-}
-
-.course-features li::before {
-    content: '✓ ';
-    color: var(--primary-color);
-}
-
 .course-btn {
     display: inline-block;
     padding: 14px 30px;
@@ -4165,7 +4147,7 @@ html, body {
     .course-card .card-body { padding: 20px; }
     .course-card h3 { font-size: 22px; }
     .course-level { font-size: 10px; }
-    .course-features li { font-size: 13px; padding: 6px 0; }
+
     .course-btn { padding: 12px 20px; font-size: 11px; }
 
     .schedule-section { padding: 40px 4%; }
