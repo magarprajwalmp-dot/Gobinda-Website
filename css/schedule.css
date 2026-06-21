@@ -315,16 +315,22 @@
 .faq-item {
     background: #fff;
     border-radius: 16px;
-    padding: 28px 32px;
+    padding: 0;
     box-shadow: 0 4px 20px rgba(0,0,0,0.04);
     border: 1px solid rgba(0,0,0,0.04);
-    transition: transform 0.4s cubic-bezier(0.34,1.56,0.64,1), box-shadow 0.4s ease;
+    transition: transform 0.4s cubic-bezier(0.34,1.56,0.64,1), box-shadow 0.4s ease, border-color 0.4s ease;
+    cursor: pointer;
 }
 
 .faq-item:hover {
     transform: translateY(-3px) scale(1.01);
     box-shadow: 0 12px 40px rgba(202,131,55,0.12);
     border-color: rgba(202,131,55,0.2);
+}
+
+.faq-item.open {
+    border-color: rgba(202,131,55,0.25);
+    box-shadow: 0 12px 40px rgba(202,131,55,0.1);
 }
 
 .faq-q {
@@ -335,18 +341,40 @@
     font-weight: 600;
     font-size: 17px;
     color: #222;
+    padding: 28px 32px;
 }
 
-.faq-q i {
+.faq-q i:first-child {
     color: var(--primary-color);
     font-size: 20px;
     flex-shrink: 0;
 }
 
+.faq-q span {
+    flex: 1;
+}
+
+.faq-toggle {
+    font-size: 14px;
+    color: var(--primary-color);
+    transition: transform 0.4s cubic-bezier(0.34,1.56,0.64,1);
+    flex-shrink: 0;
+}
+
+.faq-item.open .faq-toggle {
+    transform: rotate(180deg);
+}
+
 .faq-a {
-    margin-top: 16px;
-    padding-top: 16px;
-    border-top: 1px solid rgba(0,0,0,0.06);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.45s cubic-bezier(0.4,0,0.2,1), padding 0.45s cubic-bezier(0.4,0,0.2,1);
+    padding: 0 32px;
+}
+
+.faq-item.open .faq-a {
+    max-height: 300px;
+    padding: 0 32px 28px;
 }
 
 .faq-a p {
@@ -355,6 +383,8 @@
     line-height: 1.7;
     color: #555;
     margin: 0;
+    padding-top: 16px;
+    border-top: 1px solid rgba(0,0,0,0.06);
 }
 
 @media(max-width:768px) {
@@ -364,12 +394,13 @@
     .faq-container .section-header {
         margin-bottom: 40px;
     }
-    .faq-item {
-        padding: 22px 24px;
-    }
     .faq-q {
         font-size: 15px;
         gap: 12px;
+        padding: 22px 24px;
+    }
+    .faq-item.open .faq-a {
+        padding: 0 24px 22px;
     }
     .faq-a p {
         font-size: 14px;
@@ -380,10 +411,11 @@
     .faq-section {
         padding: 50px 4%;
     }
-    .faq-item {
-        padding: 18px 20px;
-    }
     .faq-q {
         font-size: 14px;
+        padding: 18px 20px;
+    }
+    .faq-item.open .faq-a {
+        padding: 0 20px 18px;
     }
 }
