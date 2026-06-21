@@ -882,7 +882,7 @@ header.scrolled .schedule-btn {
 }
 
 .footer-col ul li {
-    margin-bottom: 15px;
+    margin-bottom: 18px;
     color: #999;
     transition: color 0.3s ease, padding-left 0.3s ease;
     cursor: default;
@@ -1147,7 +1147,7 @@ header.scrolled .schedule-btn {
     }
 
     .footer-col ul li {
-        margin-bottom: 10px;
+        margin-bottom: 14px;
         font-size: 13px;
     }
 
@@ -1196,7 +1196,7 @@ header.scrolled .schedule-btn {
     .footer-col ul {
         display: grid;
         grid-template-columns: 1fr;
-        gap: 2px;
+        gap: 8px;
     }
 
     .footer-col ul li {
