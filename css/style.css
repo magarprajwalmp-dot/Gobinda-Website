@@ -4051,7 +4051,7 @@ html, body {
     .hero-left h1 { font-size: 46px; }
     .hero-left { height: auto; padding-top: 10px; }
     .hero-right { height: 380px; }
-    .buttons { margin-top: 32px; justify-content: center; }
+    .buttons { margin-top: 32px; justify-content: flex-start; align-items: flex-start; }
 
     .section-title h2 { font-size: 36px; }
     .section-header h2 { font-size: 36px; }
