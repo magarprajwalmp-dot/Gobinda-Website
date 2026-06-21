@@ -80,6 +80,10 @@
    </div>
   </section>
   <section class="schedule-section reveal">
+   <div class="schedule-page-loader">
+    <div class="loader-spinner"></div>
+    <p>Loading schedule...</p>
+   </div>
    <div class="schedule-container">
     <div class="schedule-header">
      <span class="section-label">
@@ -95,10 +99,6 @@
       Select a slot below and we'll take care of the rest. Walk-ins are also welcome at our studio.
      </p>
       <div class="calendly-loader-wrap">
-        <div class="calendly-loader">
-          <div class="loader-spinner"></div>
-          <p>Loading schedule...</p>
-        </div>
         <iframe allow="clipboard-read; clipboard-write" frameborder="0" height="700" loading="lazy" src="https://calendly.com/magar-prajwal-mp/30min?embed_domain=www.gobinddanceacademy.com" style="border-radius:16px;min-width:320px;" width="100%">
         </iframe>
       </div>
@@ -237,10 +237,17 @@
 <script src="js/main.js"></script>
 <script>
     const calIframe = document.querySelector('.calendly-loader-wrap iframe');
-    const calLoader = document.querySelector('.calendly-loader');
-    if (calIframe && calLoader) {
-        calIframe.addEventListener('load', () => calLoader.classList.add('hidden'));
-        setTimeout(() => calLoader.classList.add('hidden'), 8000);
+    const pageLoader = document.querySelector('.schedule-page-loader');
+    const scheduleContainer = document.querySelector('.schedule-container');
+    if (calIframe && pageLoader && scheduleContainer) {
+        calIframe.addEventListener('load', () => {
+            pageLoader.classList.add('hidden');
+            scheduleContainer.classList.add('loaded');
+        });
+        setTimeout(() => {
+            pageLoader.classList.add('hidden');
+            scheduleContainer.classList.add('loaded');
+        }, 8000);
     }
 
     document.querySelectorAll('.faq-item').forEach(item => {
