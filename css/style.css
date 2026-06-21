@@ -1858,31 +1858,6 @@ header.scrolled .schedule-btn {
     display: none;
 }
 
-/* Mobile carousel for courses */
-@media(max-width: 768px) {
-    .courses-grid {
-        display: flex !important;
-        gap: 20px !important;
-        overflow-x: auto;
-        scroll-snap-type: x mandatory;
-        -webkit-overflow-scrolling: touch;
-        scrollbar-width: none;
-        padding: 8px 5% 20px;
-        margin: 0 -5%;
-        width: auto;
-    }
-    
-    .courses-grid::-webkit-scrollbar {
-        display: none;
-    }
-    
-    .course-card {
-        flex: 0 0 85%;
-        scroll-snap-align: center;
-        min-width: 280px;
-    }
-}
-
 /* SCHEDULE */
 .schedule-section {
     padding: 100px 8%;
