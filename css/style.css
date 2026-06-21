@@ -1186,6 +1186,7 @@ header.scrolled .schedule-btn {
         gap: 20px;
         padding-bottom: 30px;
         width: 92%;
+        align-items: stretch;
     }
 
     .footer-col:first-child,
@@ -1193,10 +1194,16 @@ header.scrolled .schedule-btn {
         grid-column: auto;
     }
 
+    .footer-col {
+        display: flex;
+        flex-direction: column;
+    }
+
     .footer-col ul {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 8px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        flex: 1;
     }
 
     .footer-col ul li {
@@ -4172,7 +4179,6 @@ html, body {
     .card-body { padding: 18px; }
 
     .footer-container { gap: 20px; }
-    .footer-col ul { grid-template-columns: 1fr; }
 
     .page-hero h1 { font-size: 22px; }
     .page-hero-about, .page-hero-courses, .page-hero-blog,
