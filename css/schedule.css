@@ -322,6 +322,10 @@
     cursor: pointer;
 }
 
+.faq-item:hover .faq-q {
+    color: var(--primary-color);
+}
+
 .faq-item:hover {
     transform: translateY(-3px) scale(1.01);
     box-shadow: 0 12px 40px rgba(202,131,55,0.12);
