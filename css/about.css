@@ -473,11 +473,7 @@
         gap:40px;
     }
     .about-image {
-        min-height:400px;
-        height:100%;
-    }
-    .about-image img {
-        height:400px;
+        display: none;
     }
     .stats-timeline-grid {
         grid-template-columns:1fr;
@@ -507,12 +503,6 @@
 @media(max-width:768px) {
     .page-hero-about {
         min-height:380px;
-    }
-    .about-image {
-        min-height:300px;
-    }
-    .about-image img {
-        height:300px;
     }
     .about-stats-timeline {
         padding:60px 5%;
