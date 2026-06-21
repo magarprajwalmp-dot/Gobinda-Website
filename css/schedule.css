@@ -389,6 +389,11 @@
     margin: 0;
     padding-top: 16px;
     border-top: 1px solid rgba(0,0,0,0.06);
+    transition: border-color 0.3s ease;
+}
+
+.faq-item:hover .faq-a p {
+    border-top-color: var(--primary-color);
 }
 
 @media(max-width:768px) {
