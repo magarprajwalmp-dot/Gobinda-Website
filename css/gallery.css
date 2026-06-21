@@ -45,6 +45,7 @@
     justify-content: flex-start;
     gap: 12px;
     margin-bottom: 50px;
+    flex-wrap: wrap;
 }
 
 .gallery-filter {
