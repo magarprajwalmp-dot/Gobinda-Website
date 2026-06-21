@@ -1038,6 +1038,16 @@ document.addEventListener('DOMContentLoaded', () => {
         initTestimonialCarousel();
     }
 
+    // ─── FILTER SELECT (phone dropdown) ─────────────────
+    document.querySelectorAll('.filter-select').forEach(sel => {
+        sel.addEventListener('change', () => {
+            const val = sel.value;
+            const bar = sel.closest('.filter-bar');
+            const btn = bar?.querySelector(`[data-filter="${val}"]`);
+            if (btn) btn.click();
+        });
+    });
+
     // ─── GALLERY FILTERS ───────────────────────────────────
     document.querySelectorAll('.gallery-filter').forEach(btn => {
         btn.addEventListener('click', () => {

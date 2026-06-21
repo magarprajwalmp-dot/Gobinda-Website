@@ -96,11 +96,16 @@
         </i>
         <input class="filter-input" data-target="gallery-grid" placeholder="Search gallery..." type="text"/>
        </div>
-       <div class="gallery-filters">
-        <button class="gallery-filter active" data-filter="all">All</button>
-        <button class="gallery-filter" data-filter="photo">Photos</button>
-        <button class="gallery-filter" data-filter="video">Videos</button>
-       </div>
+        <div class="gallery-filters">
+         <button class="gallery-filter active" data-filter="all">All</button>
+         <button class="gallery-filter" data-filter="photo">Photos</button>
+         <button class="gallery-filter" data-filter="video">Videos</button>
+        </div>
+        <select class="filter-select" data-target="gallery-grid">
+         <option value="all">All</option>
+         <option value="photo">Photos</option>
+         <option value="video">Videos</option>
+        </select>
       </div>
       <div class="gallery-grid">
             <div class="gallery-item gallery-item--wide" data-type="photo">
