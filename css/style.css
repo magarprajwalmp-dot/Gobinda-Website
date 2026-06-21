@@ -757,6 +757,7 @@ header.scrolled .schedule-btn {
     grid-template-columns: repeat(4, 1fr);
     gap: 60px;
     padding-bottom: 60px;
+    align-items: start;
 }
 
 .footer-logo {
