@@ -683,3 +683,21 @@
         font-size:13px;
     }
 }
+
+@media(max-width:400px) {
+    .page-hero-about { min-height:260px; }
+    .page-hero-about .page-hero-content h1 { font-size:24px; }
+    .about-story { padding:40px 4%; }
+    .about-story .about-image img { height:220px; }
+    .about-story .about-text h2 { font-size:22px; }
+    .about-story .about-text p { font-size:14px; }
+    .about-mission { padding:40px 4%; }
+    .about-timeline { padding:40px 4%; }
+    .about-stats-timeline { padding:30px 4%; }
+    .stats-timeline-grid { gap:24px; }
+    .about-timeline-col .section-header h2 { font-size:24px; }
+    .about-timeline-col .timeline-content h3 { font-size:16px; }
+    .about-timeline-col .timeline-content p { font-size:13px; }
+    .about-quote blockquote { font-size:15px; }
+    .quote-mark { font-size:32px; }
+}

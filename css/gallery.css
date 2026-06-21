@@ -317,3 +317,14 @@
         border-radius: 12px;
     }
 }
+
+@media(max-width:400px) {
+    .gallery-section { padding: 30px 4%; }
+    .gallery-grid { grid-auto-rows: 160px; gap: 8px; }
+    .gallery-filters { gap: 4px; margin-bottom: 18px; }
+    .gallery-filter { padding: 5px 10px; font-size: 9px; letter-spacing: 1px; }
+    .gallery-placeholder p { font-size: 10px; }
+    .gallery-icon { font-size: 24px; margin-bottom: 6px; }
+    .gallery-placeholder { border-radius: 10px; }
+    .page-hero-gallery { min-height: 260px; }
+}

@@ -454,3 +454,22 @@
         letter-spacing: 0.5px;
     }
 }
+
+@media(max-width:400px) {
+    .blog-section { padding: 30px 3%; }
+    .blog-grid { gap: 16px; }
+    .blog-card.featured .blog-placeholder { min-height: 140px; font-size: 30px; }
+    .blog-card.featured .blog-content { padding: 16px; }
+    .blog-card.featured .blog-content h3 { font-size: 18px; }
+    .blog-card:not(.featured) .blog-placeholder { min-height: 120px; font-size: 26px; }
+    .blog-card:not(.featured) .blog-content { padding: 14px; }
+    .blog-card:not(.featured) .blog-content h3 { font-size: 16px; }
+    .blog-content h3 { font-size: 18px; }
+    .blog-meta { font-size: 11px; }
+    .blog-card:not(.featured) .blog-content p:last-of-type { font-size: 12px; }
+    .filter-bar { margin-bottom: 18px; gap: 10px; }
+    .filter-tags { gap: 3px; }
+    .filter-tag { padding: 4px 6px; font-size: 8px; letter-spacing: 0.3px; }
+    .filter-input { padding: 12px 14px 12px 38px; font-size: 12px; }
+    .filter-search i { left: 14px; font-size: 14px; }
+}

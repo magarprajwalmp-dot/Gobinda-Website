@@ -2461,23 +2461,67 @@ header.scrolled .schedule-btn {
 .social-link-3d::before {
     content: '';
     position: absolute;
-    inset: -2px;
+    inset: 0;
     border-radius: 50%;
     opacity: 0;
     transition: opacity 0.5s ease;
-    z-index: -1;
+    z-index: 0;
 }
 
 .social-link-3d i {
     font-size: 28px;
-    transition: transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1),
-                color 0.4s ease;
+    transition: transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
     position: relative;
     z-index: 1;
 }
 
 .social-link-3d .si-label {
     display: none;
+}
+
+.social-link-3d[href*="facebook"]::before { background: #1877F2; }
+.social-link-3d[href*="facebook"] i { color: #1877F2; }
+.social-link-3d[href*="facebook"]:hover {
+    box-shadow: 0 8px 30px rgba(24,119,242,0.35),
+                0 0 60px rgba(24,119,242,0.15),
+                inset 0 1px 0 rgba(255,255,255,0.4);
+    border-color: rgba(24,119,242,0.3);
+}
+
+.social-link-3d[href*="youtube"]::before { background: #FF0000; }
+.social-link-3d[href*="youtube"] i { color: #FF0000; }
+.social-link-3d[href*="youtube"]:hover {
+    box-shadow: 0 8px 30px rgba(255,0,0,0.35),
+                0 0 60px rgba(255,0,0,0.15),
+                inset 0 1px 0 rgba(255,255,255,0.4);
+    border-color: rgba(255,0,0,0.3);
+}
+
+.social-link-3d[href*="instagram"]::before { background: linear-gradient(135deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); }
+.social-link-3d[href*="instagram"] i { color: #E4405F; }
+.social-link-3d[href*="instagram"]:hover {
+    box-shadow: 0 8px 30px rgba(228,64,95,0.35),
+                0 0 60px rgba(228,64,95,0.15),
+                inset 0 1px 0 rgba(255,255,255,0.4);
+    border-color: rgba(228,64,95,0.3);
+}
+
+.social-link-3d[href*="tiktok"]::before { background: #000000; }
+.social-link-3d[href*="tiktok"] i { color: #000000; }
+.social-link-3d[href*="tiktok"]:hover {
+    box-shadow: 0 8px 30px rgba(0,0,0,0.25),
+                0 0 60px rgba(0,0,0,0.1),
+                inset 0 1px 0 rgba(255,255,255,0.4);
+    border-color: rgba(0,0,0,0.2);
+}
+
+.social-link-3d[href*="whatsapp"]::before { background: #25D366; }
+.social-link-3d[href*="whatsapp"] i { color: #25D366; }
+.social-link-3d[href*="whatsapp"]:hover {
+    box-shadow: 0 8px 30px rgba(37,211,102,0.35),
+                0 0 60px rgba(37,211,102,0.15),
+                inset 0 1px 0 rgba(255,255,255,0.4);
+    border-color: rgba(37,211,102,0.3);
 }
 
 .social-link-3d:hover {
@@ -2487,8 +2531,13 @@ header.scrolled .schedule-btn {
 }
 
 .social-link-3d:hover i {
+    color: #fff;
     transform: scale(1.15) rotate(-10deg);
     animation: icon-bounce 0.6s ease;
+}
+
+.social-link-3d:hover::before {
+    opacity: 1;
 }
 
 @keyframes icon-bounce {
@@ -2496,51 +2545,6 @@ header.scrolled .schedule-btn {
     40% { transform: scale(1.2) rotate(-12deg); }
     60% { transform: scale(1.1) rotate(-8deg); }
     100% { transform: scale(1.15) rotate(-10deg); }
-}
-
-.social-link-3d[href*="facebook"] i { color: #1877F2; }
-.social-link-3d[href*="facebook"]:hover {
-    box-shadow: 0 8px 30px rgba(24,119,242,0.35),
-                0 0 60px rgba(24,119,242,0.15),
-                inset 0 1px 0 rgba(255,255,255,0.4);
-    background: rgba(24,119,242,0.12);
-    border-color: rgba(24,119,242,0.3);
-}
-
-.social-link-3d[href*="youtube"] i { color: #FF0000; }
-.social-link-3d[href*="youtube"]:hover {
-    box-shadow: 0 8px 30px rgba(255,0,0,0.35),
-                0 0 60px rgba(255,0,0,0.15),
-                inset 0 1px 0 rgba(255,255,255,0.4);
-    background: rgba(255,0,0,0.1);
-    border-color: rgba(255,0,0,0.3);
-}
-
-.social-link-3d[href*="instagram"] i { color: #E4405F; }
-.social-link-3d[href*="instagram"]:hover {
-    box-shadow: 0 8px 30px rgba(228,64,95,0.35),
-                0 0 60px rgba(228,64,95,0.15),
-                inset 0 1px 0 rgba(255,255,255,0.4);
-    background: rgba(228,64,95,0.1);
-    border-color: rgba(228,64,95,0.3);
-}
-
-.social-link-3d[href*="tiktok"] i { color: #000000; }
-.social-link-3d[href*="tiktok"]:hover {
-    box-shadow: 0 8px 30px rgba(0,0,0,0.25),
-                0 0 60px rgba(0,0,0,0.1),
-                inset 0 1px 0 rgba(255,255,255,0.4);
-    background: rgba(0,0,0,0.06);
-    border-color: rgba(0,0,0,0.2);
-}
-
-.social-link-3d[href*="whatsapp"] i { color: #25D366; }
-.social-link-3d[href*="whatsapp"]:hover {
-    box-shadow: 0 8px 30px rgba(37,211,102,0.35),
-                0 0 60px rgba(37,211,102,0.15),
-                inset 0 1px 0 rgba(255,255,255,0.4);
-    background: rgba(37,211,102,0.1);
-    border-color: rgba(37,211,102,0.3);
 }
 
 /* RESPONSIVE FOR INNER PAGES */
@@ -3856,4 +3860,261 @@ header.scrolled {
     .page-hero p {
         font-size:16px;
     }
+}
+
+/* ===== COMPREHENSIVE PHONE OPTIMISATIONS ===== */
+
+html {
+    -webkit-text-size-adjust: 100%;
+}
+
+@media(max-width: 576px) {
+    body { padding-top: 70px; }
+    header { padding: 18px 20px; }
+    header.scrolled { padding: 14px 20px; }
+
+    .hero { padding: 16px 20px 40px; gap: 24px; }
+    .hero-left h1 { font-size: 46px; }
+    .hero-left { height: auto; padding-top: 10px; }
+    .hero-right { height: 380px; }
+
+    .section-title h2 { font-size: 36px; }
+    .section-header h2 { font-size: 36px; }
+
+    .services { padding: 60px 20px; }
+    .testimonials { padding: 60px 20px; }
+
+    .cta-section { min-height: 400px; }
+    .cta-content h2 { font-size: 36px; }
+    .cta-content p { font-size: 18px; }
+
+    .courses-overview { padding: 60px 5%; }
+    .schedule-section { padding: 60px 5%; }
+    .schedule-header h2 { font-size: 40px; }
+
+    .blog-section { padding: 60px 5%; }
+    .blog-social { padding: 40px 5%; }
+    .contact-social { padding: 50px 5%; }
+    .contact-social h2 { font-size: 32px; }
+    .social-link-3d { width: 80px; height: 80px; font-size: 11px; }
+    .social-link-3d i { font-size: 22px; }
+    .social-3d { gap: 16px; }
+
+    .footer-container { gap: 30px; }
+    .logo-section img { height: 45px; }
+
+    nav .nav-links { padding: 80px 20px 20px; }
+    nav .nav-links a { padding: 18px 24px; font-size: 17px; }
+
+    .filter-input { padding: 14px 16px 14px 44px; font-size: 14px; }
+    .filter-search i { left: 16px; font-size: 16px; }
+}
+
+@media(max-width: 400px) {
+    body { padding-top: 64px; }
+    header { padding: 14px 12px; }
+    header.scrolled { padding: 12px 12px; }
+    .logo-section img { height: 38px; }
+    .logo-section { gap: 10px; }
+    .hamburger { padding: 6px; }
+    .hamburger span { width: 22px; height: 1.5px; }
+
+    nav .nav-links { padding: 60px 12px 16px; gap: 4px; }
+    nav .nav-links a { padding: 14px 16px; font-size: 15px; }
+    .nav-schedule-btn { padding: 14px 16px !important; font-size: 11px !important; }
+
+    .hero { padding: 12px 12px 30px; gap: 16px; }
+    .hero-left h1 { font-size: 32px; }
+    .hero-right { height: 260px; border-radius: 30% 70% 30% 70% / 70% 30% 70% 30%; }
+    .description { font-size: 15px; margin-top: 16px; }
+    .buttons { margin-top: 24px; gap: 12px; }
+    .primary-btn { padding: 14px 20px; font-size: 12px; }
+
+    .stats { padding: 30px 4%; gap: 12px; }
+    .stat-box { padding: 16px; }
+    .stat-box h2 { font-size: 32px; }
+    .stat-box p { font-size: 11px; letter-spacing: 2px; }
+
+    .section-title { margin-bottom: 36px; }
+    .section-title span { font-size: 11px; letter-spacing: 3px; margin-bottom: 12px; }
+    .section-title h2 { font-size: 28px; }
+    .section-header { margin-bottom: 36px; }
+    .section-header p { font-size: 11px; letter-spacing: 3px; margin-bottom: 12px; }
+    .section-header h2 { font-size: 28px; }
+
+    .services { padding: 40px 12px; }
+    .service-card { min-height: 260px; }
+    .service-card h3 { font-size: 22px; }
+    .card-body { padding: 24px; }
+    .service-card p { font-size: 14px; }
+
+    .testimonials { padding: 40px 12px; }
+    .testimonial-card { padding: 28px; min-height: 260px; }
+    .quote { font-size: 40px; }
+    .testimonial-text { font-size: 15px; line-height: 1.7; margin-bottom: 24px; }
+    .testimonial-card h4 { font-size: 18px; }
+    .testimonial-card span { font-size: 11px; }
+
+    .cta-section { min-height: 320px; }
+    .cta-content h2 { font-size: 26px; }
+    .cta-content p { font-size: 15px; margin-bottom: 28px; }
+    .btn-primary, .btn-secondary { padding: 14px 28px; font-size: 11px; }
+
+    .courses-overview { padding: 40px 4%; }
+    .course-card .card-body { padding: 20px; }
+    .course-card h3 { font-size: 22px; }
+    .course-level { font-size: 10px; }
+    .course-features li { font-size: 13px; padding: 6px 0; }
+    .course-btn { padding: 12px 20px; font-size: 11px; }
+
+    .schedule-section { padding: 40px 4%; }
+    .schedule-header h2 { font-size: 28px; }
+    .schedule-header p { font-size: 14px; }
+    .schedule-header .section-label { font-size: 11px; letter-spacing: 3px; }
+
+    .blog-section { padding: 40px 4%; }
+    .blog-card { border-radius: 16px; }
+    .blog-content { padding: 18px; }
+    .blog-content h3 { font-size: 20px; }
+    .blog-content > p { font-size: 14px; }
+    .blog-meta { font-size: 11px; }
+    .blog-social { padding: 30px 4%; }
+    .blog-social h3 { font-size: 24px; }
+    .blog-social .social-link { padding: 10px 18px; font-size: 12px; }
+
+    .contact-social { padding: 40px 4%; }
+    .contact-social h2 { font-size: 24px; }
+    .social-link-3d { width: 64px; height: 64px; padding: 14px; }
+    .social-link-3d i { font-size: 20px; }
+    .social-3d { gap: 12px; }
+
+    .page-hero { padding: 70px 4% 40px; }
+    .page-hero h1 { font-size: 26px; }
+    .page-hero .section-label { font-size: 11px; letter-spacing: 3px; }
+    .page-hero p { font-size: 14px; }
+    .page-hero-about, .page-hero-courses, .page-hero-blog,
+    .page-hero-schedule, .page-hero-contact, .page-hero-gallery { min-height: 320px; }
+
+    .footer { padding-top: 32px; }
+    .footer-container { gap: 24px; padding-bottom: 24px; }
+    .footer-col h4 { font-size: 11px; letter-spacing: 2px; margin-bottom: 14px; }
+    .footer-col p { font-size: 12px; }
+    .footer-col ul li { font-size: 12px; }
+    .footer-bottom { font-size: 11px; padding: 16px 4%; }
+
+    .back-to-top { bottom: 16px; right: 16px; width: 40px; height: 40px; font-size: 16px; }
+
+    .related-grid { gap: 14px; }
+    .related-content { padding: 14px; }
+    .related-content h4 { font-size: 15px; }
+
+    .post-section { padding: 30px 4%; }
+    .post-body { font-size: 15px; }
+    .post-body h2 { font-size: 20px; }
+    .post-body blockquote { padding: 14px 16px; font-size: 14px; }
+
+    .gallery-section { padding: 40px 4%; }
+    .gallery-grid { grid-auto-rows: 180px; gap: 10px; }
+    .gallery-filter { padding: 6px 12px; font-size: 10px; }
+
+    .about-story { padding: 40px 4%; }
+    .about-mission { padding: 50px 4%; }
+    .about-timeline { padding: 50px 4%; }
+    .about-stats-timeline { padding: 50px 4%; }
+    .about-quote { padding: 40px 4%; }
+
+    .contact-section { padding: 30px 4%; }
+    .contact-form-wrapper { padding: 20px 14px 24px; }
+    .contact-form input, .contact-form textarea, .custom-select-trigger { padding: 12px 14px; font-size: 13px; }
+    .contact-info h2 { font-size: 22px; }
+
+    .mission-card { padding: 30px 20px; }
+    .mission-card h3 { font-size: 22px; }
+    .mission-icon { font-size: 32px; margin-bottom: 16px; }
+
+    .about-text h2 { font-size: 26px; }
+    .about-text p { font-size: 15px; }
+    .about-image img { height: 240px; }
+
+    .stat-card { padding: 18px 14px; }
+    .stat-card h2 { font-size: 28px; }
+    .stat-card p { font-size: 14px; }
+
+    .blog-card.featured .blog-placeholder { min-height: 140px; font-size: 32px; }
+    .blog-card.featured .blog-content h3 { font-size: 18px; }
+    .blog-card:not(.featured) .blog-placeholder { min-height: 120px; font-size: 28px; }
+    .blog-card:not(.featured) .blog-content h3 { font-size: 16px; }
+
+    .gallery-placeholder p { font-size: 11px; }
+    .gallery-icon { font-size: 28px; }
+}
+
+@media(max-width: 360px) {
+    header { padding: 10px 8px; }
+    header.scrolled { padding: 10px 8px; }
+    .logo-section img { height: 34px; }
+    .logo-section { gap: 6px; }
+
+    .hero-left h1 { font-size: 28px; }
+    .hero-right { height: 220px; }
+    .description { font-size: 14px; }
+
+    nav .nav-links a { padding: 12px 12px; font-size: 14px; }
+    .nav-schedule-btn { padding: 12px 12px !important; font-size: 10px !important; }
+
+    .section-title h2 { font-size: 24px; }
+    .section-header h2 { font-size: 24px; }
+
+    .stat-box h2 { font-size: 28px; }
+    .stat-box p { font-size: 10px; letter-spacing: 1px; }
+
+    .service-card h3 { font-size: 20px; }
+    .card-body { padding: 18px; }
+    .service-card p { font-size: 13px; }
+
+    .course-card h3 { font-size: 20px; }
+    .card-body { padding: 18px; }
+
+    .footer-container { gap: 20px; }
+    .footer-col ul { grid-template-columns: 1fr; }
+
+    .page-hero h1 { font-size: 22px; }
+    .page-hero-about, .page-hero-courses, .page-hero-blog,
+    .page-hero-schedule, .page-hero-contact, .page-hero-gallery { min-height: 280px; }
+}
+
+/* Safe area for modern phones with notches */
+@supports(padding: max(0px)) {
+    header { padding-left: max(80px, env(safe-area-inset-left)); padding-right: max(80px, env(safe-area-inset-right)); }
+    header.scrolled { padding-left: max(80px, env(safe-area-inset-left)); padding-right: max(80px, env(safe-area-inset-right)); }
+    .hero { padding-left: max(80px, env(safe-area-inset-left)); padding-right: max(80px, env(safe-area-inset-right)); }
+    .back-to-top { right: max(40px, env(safe-area-inset-right)); bottom: max(40px, env(safe-area-inset-bottom)); }
+}
+
+@media(max-width: 992px) {
+    @supports(padding: max(0px)) {
+        header { padding-left: max(24px, env(safe-area-inset-left)); padding-right: max(24px, env(safe-area-inset-right)); }
+        header.scrolled { padding-left: max(24px, env(safe-area-inset-left)); padding-right: max(24px, env(safe-area-inset-right)); }
+        .hero { padding-left: max(20px, env(safe-area-inset-left)); padding-right: max(20px, env(safe-area-inset-right)); }
+        .back-to-top { right: max(24px, env(safe-area-inset-right)); bottom: max(24px, env(safe-area-inset-bottom)); }
+    }
+}
+
+@media(max-width: 480px) {
+    @supports(padding: max(0px)) {
+        header { padding-left: max(16px, env(safe-area-inset-left)); padding-right: max(16px, env(safe-area-inset-right)); }
+        header.scrolled { padding-left: max(16px, env(safe-area-inset-left)); padding-right: max(16px, env(safe-area-inset-right)); }
+        .hero { padding-left: max(16px, env(safe-area-inset-left)); padding-right: max(16px, env(safe-area-inset-right)); }
+        .back-to-top { right: max(16px, env(safe-area-inset-right)); bottom: max(16px, env(safe-area-inset-bottom)); }
+    }
+}
+
+/* Fix hero image shape on mobile - simpler border radius */
+@media(max-width: 576px) {
+    .hero-right {
+        animation: none;
+        border-radius: 30% 70% 30% 70% / 70% 30% 70% 30%;
+        height: 340px;
+    }
+    .hero-right:hover { border-radius: 40% 60% 40% 60% / 60% 40% 60% 40%; }
 }
