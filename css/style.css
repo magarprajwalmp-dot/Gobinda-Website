@@ -1595,6 +1595,99 @@ header.scrolled .schedule-btn {
     background: var(--primary-color);
 }
 
+/* ─── WHY GDA SECTION ──────────────────────────── */
+.why-section {
+    padding: 100px 8%;
+    text-align: center;
+    background: #faf8f6;
+}
+
+.why-section .section-header {
+    margin-bottom: 20px;
+}
+
+.why-intro {
+    max-width: 700px;
+    margin: 0 auto 50px;
+    color: #555;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+.why-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.why-card {
+    background: #fff;
+    padding: 36px 24px 30px;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.05);
+    border: 1px solid rgba(0,0,0,0.04);
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.why-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px rgba(0,0,0,0.1);
+    border-color: rgba(212,160,85,0.2);
+}
+
+.why-icon {
+    width: 56px;
+    height: 56px;
+    margin: 0 auto 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, var(--primary-color), #d4a055);
+    border-radius: 14px;
+    font-size: 22px;
+    color: #fff;
+}
+
+.why-card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #111;
+}
+
+.why-card p {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.why-btn-wrap {
+    margin-top: 50px;
+}
+
+.why-btn {
+    display: inline-block;
+    padding: 16px 48px;
+    background: linear-gradient(135deg, var(--primary-color), #d4a055);
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 20px rgba(202,131,55,0.3);
+}
+
+.why-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(202,131,55,0.4);
+}
+
 /* ─── FILTER BAR ─────────────────────────────── */
 .filter-bar {
     max-width: 1200px;
@@ -4048,6 +4141,9 @@ html, body {
     .cta-content p { font-size: 18px; }
 
     .courses-overview { padding: 60px 5%; }
+    .why-section { padding: 60px 5%; }
+    .why-grid { grid-template-columns: repeat(2, 1fr); gap: 16px; }
+    .why-intro { font-size: 15px; margin-bottom: 36px; }
     .schedule-section { padding: 60px 5%; }
     .schedule-header h2 { font-size: 40px; }
 
@@ -4102,6 +4198,14 @@ html, body {
     .section-header h2 { font-size: 28px; margin-bottom: 40px; }
 
     .services { padding: 40px 12px; }
+    .why-section { padding: 40px 12px; }
+    .why-grid { grid-template-columns: 1fr; gap: 14px; }
+    .why-intro { font-size: 14px; margin-bottom: 28px; }
+    .why-card { padding: 24px 18px 22px; }
+    .why-icon { width: 46px; height: 46px; font-size: 18px; margin-bottom: 14px; }
+    .why-card h3 { font-size: 17px; }
+    .why-card p { font-size: 13px; }
+    .why-btn { padding: 14px 36px; font-size: 12px; }
     .service-card { min-height: 260px; }
     .service-card h3 { font-size: 22px; }
     .card-body { padding: 24px; }
@@ -4232,6 +4336,15 @@ html, body {
     .service-card p { font-size: 13px; }
 
     .course-card h3 { font-size: 20px; }
+
+    .why-section { padding: 32px 10px; }
+    .why-grid { gap: 12px; }
+    .why-card { padding: 20px 14px 18px; }
+    .why-icon { width: 40px; height: 40px; font-size: 16px; margin-bottom: 12px; }
+    .why-card h3 { font-size: 16px; }
+    .why-card p { font-size: 12px; }
+    .why-btn { padding: 12px 28px; font-size: 11px; }
+    .why-btn-wrap { margin-top: 32px; }
     .card-body { padding: 18px; }
 
     .footer-container { gap: 20px; }
