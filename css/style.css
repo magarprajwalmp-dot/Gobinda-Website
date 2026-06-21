@@ -413,7 +413,7 @@ header.scrolled .schedule-btn {
     font-size:64px;
     font-weight:400;
     line-height:1.1;
-    margin:0;
+    margin:0 0 25px;
     font-family: "Playfair Display", serif;
 }
 
@@ -576,7 +576,7 @@ header.scrolled .schedule-btn {
     font-family:"Playfair Display", serif;
     font-size:72px;
     font-weight:400;
-    margin:0;
+    margin:0 0 25px;
     color:#111;
 }
 
@@ -4021,10 +4021,10 @@ html, body {
 
     .section-title { margin-bottom: 50px; }
     .section-title span { font-size: 11px; letter-spacing: 3px; margin-bottom: 12px; }
-    .section-title h2 { font-size: 28px; }
+    .section-title h2 { font-size: 28px; margin-bottom: 40px; }
     .section-header { margin-bottom: 50px; }
     .section-header p { font-size: 11px; letter-spacing: 3px; margin-bottom: 12px; }
-    .section-header h2 { font-size: 28px; }
+    .section-header h2 { font-size: 28px; margin-bottom: 40px; }
 
     .services { padding: 40px 12px; }
     .service-card { min-height: 260px; }
