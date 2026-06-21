@@ -1573,6 +1573,7 @@ header.scrolled .schedule-btn {
     box-shadow: 0 8px 32px rgba(0,0,0,0.05);
     overflow: hidden;
     position: relative;
+    cursor: pointer;
 }
 
 .course-card .card-cover {
@@ -1628,21 +1629,33 @@ header.scrolled .schedule-btn {
     flex-grow: 1;
 }
 
-.course-btn {
-    display: inline-block;
-    padding: 14px 30px;
-    background: var(--secondary-color);
-    color: #fff;
-    text-decoration: none;
-    letter-spacing: 2px;
-    font-size: 12px;
-    text-align: center;
-    transition: 0.3s;
+.card-meta {
+    display: flex;
+    align-items: center;
+    gap: 16px;
     margin-top: auto;
+    padding-top: 16px;
 }
 
-.course-btn:hover {
-    background: var(--primary-color);
+.card-meta span {
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    color: var(--primary-color);
+    text-transform: uppercase;
+}
+
+.card-meta span:first-child {
+    background: rgba(202,131,55,0.1);
+    padding: 4px 12px;
+    border-radius: 20px;
+}
+
+.card-meta span + span::before {
+    content: '·';
+    margin-right: 16px;
+    color: #ccc;
 }
 
 /* ─── WHY GDA SECTION ──────────────────────────── */
@@ -4285,8 +4298,6 @@ html, body {
     .course-card .card-body { padding: 20px; }
     .course-card h3 { font-size: 22px; }
     .course-level { font-size: 10px; }
-
-    .course-btn { padding: 12px 20px; font-size: 11px; }
 
     .schedule-section { padding: 40px 4%; }
     .schedule-header h2 { font-size: 28px; }
