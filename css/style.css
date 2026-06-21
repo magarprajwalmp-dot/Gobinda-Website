@@ -1240,14 +1240,16 @@ header.scrolled .schedule-btn {
     }
 
     .social-icons {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
         gap: 8px;
-        flex-wrap: wrap;
+        justify-items: center;
     }
 
     .social-icons a {
-        width: 36px;
-        height: 36px;
-        font-size: 14px;
+        width: 42px;
+        height: 42px;
+        font-size: 16px;
         border-radius: 8px;
     }
 
