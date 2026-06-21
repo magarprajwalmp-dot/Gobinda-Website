@@ -3676,8 +3676,9 @@ header.scrolled {
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: space-evenly;
-        padding: 12px 40px;
+        justify-content: flex-start;
+        gap: 6px;
+        padding: 16px 40px;
     }
 
     nav .nav-links a {
@@ -3708,6 +3709,7 @@ header.scrolled {
     .nav-schedule-btn {
         display: inline-flex;
         align-items: center;
+        margin-top: auto;
         justify-content: center;
         gap: 10px;
         background:linear-gradient(
