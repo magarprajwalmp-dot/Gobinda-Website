@@ -1189,6 +1189,16 @@ header.scrolled .schedule-btn {
     padding-left: 20px;
 }
 
+.footer-tm a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-tm a:hover {
+    color: #fff;
+}
+
 .footer-tm::before {
     content: '';
     position: absolute;
@@ -4382,6 +4392,7 @@ html, body {
     .courses-overview { padding: 40px 4%; }
     .course-card .card-body { padding: 20px; }
     .course-card h3 { font-size: 22px; }
+    .card-body > p { font-size: 13px; line-height: 1.6; }
     .course-level { font-size: 10px; }
 
     .schedule-section { padding: 40px 4%; }
