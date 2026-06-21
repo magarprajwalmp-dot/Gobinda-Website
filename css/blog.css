@@ -391,8 +391,8 @@
     }
 
     .filter-tag {
-        padding: 8px 16px;
-        font-size: 11px;
+        padding: 12px 22px;
+        font-size: 13px;
     }
 }
 
@@ -449,9 +449,8 @@
     }
 
     .filter-tag {
-        padding: 5px 8px;
-        font-size: 9px;
-        letter-spacing: 0.5px;
+        padding: 10px 18px;
+        font-size: 12px;
     }
 }
 
@@ -469,7 +468,7 @@
     .blog-card:not(.featured) .blog-content p:last-of-type { font-size: 12px; }
     .filter-bar { margin-bottom: 18px; gap: 10px; }
     .filter-tags { gap: 3px; }
-    .filter-tag { padding: 4px 6px; font-size: 8px; letter-spacing: 0.3px; }
+    .filter-tag { padding: 10px 16px; font-size: 12px; }
     .filter-input { padding: 12px 14px 12px 38px; font-size: 12px; }
     .filter-search i { left: 14px; font-size: 14px; }
 }
