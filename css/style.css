@@ -392,29 +392,6 @@ nav .nav-links a.active::after{
     }
 }
 
-@keyframes iconPremium {
-    0% {
-        background: linear-gradient(135deg, var(--primary-color), #d4a055);
-        box-shadow: 0 0 20px rgba(202,131,55,0.3);
-        transform: scale(1) rotate(0deg);
-    }
-    35% {
-        background: linear-gradient(135deg, var(--secondary-color), #3a5cb8);
-        box-shadow: 0 0 45px rgba(34,60,133,0.5);
-        transform: scale(1.15) rotate(-10deg);
-    }
-    65% {
-        background: linear-gradient(135deg, var(--primary-color), #e8c076);
-        box-shadow: 0 0 55px rgba(202,131,55,0.6);
-        transform: scale(1.08) rotate(5deg);
-    }
-    100% {
-        background: linear-gradient(135deg, var(--primary-color), #d4a055);
-        box-shadow: 0 0 20px rgba(202,131,55,0.3);
-        transform: scale(1) rotate(0deg);
-    }
-}
-
 /* Glass header effect when scrolling */
 header.scrolled nav .nav-links a,
 header.scrolled .logo-text p,
@@ -468,12 +445,19 @@ header.scrolled .schedule-btn {
     font-size: 20px;
     color: #fff;
     margin-bottom: 16px;
-    transition: box-shadow 0.3s ease;
-    box-shadow: 0 0 20px rgba(202,131,55,0.2);
 }
 
 .stat-box:hover .stat-icon {
-    animation: iconPremium 1s ease-in-out infinite;
+    animation: statIconAnim 1s ease-in-out forwards;
+}
+
+@keyframes statIconAnim {
+    0% { transform: scale(1) rotate(0deg) translateY(0); }
+    15% { transform: scale(1.2) rotate(-10deg) translateY(-3px); }
+    35% { transform: scale(1.05) rotate(-2deg) translateY(0); }
+    55% { transform: scale(1.15) rotate(-7deg) translateY(-2px); }
+    75% { transform: scale(1.08) rotate(-3deg) translateY(-1px); }
+    100% { transform: scale(1.1) rotate(-5deg) translateY(0); }
 }
 
 .stat-box:last-child {
