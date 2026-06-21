@@ -238,15 +238,15 @@
 }
 
 .filter-tag {
-    padding: 9px 20px;
+    padding: 12px 32px;
     border: 1px solid rgba(255,255,255,0.4);
     border-radius: 30px;
     background: rgba(255,255,255,0.25);
     backdrop-filter: blur(16px) saturate(180%);
     -webkit-backdrop-filter: blur(16px) saturate(180%);
     font-family: 'Inter', sans-serif;
-    font-size: 12px;
-    letter-spacing: 1px;
+    font-size: 13px;
+    letter-spacing: 2px;
     color: #666;
     cursor: pointer;
     transition: transform 0.45s cubic-bezier(0.34, 1.56, 0.64, 1),
@@ -393,6 +393,7 @@
     .filter-tag {
         padding: 12px 22px;
         font-size: 13px;
+        letter-spacing: 1.5px;
     }
 }
 
@@ -468,7 +469,7 @@
     .blog-card:not(.featured) .blog-content p:last-of-type { font-size: 12px; }
     .filter-bar { margin-bottom: 18px; gap: 10px; }
     .filter-tags { gap: 3px; }
-    .filter-tag { padding: 10px 16px; font-size: 12px; }
+    .filter-tag { padding: 10px 18px; font-size: 12px; letter-spacing: 1px; }
     .filter-input { padding: 12px 14px 12px 38px; font-size: 12px; }
     .filter-search i { left: 14px; font-size: 14px; }
 }
