@@ -3772,11 +3772,11 @@ header.scrolled {
     }
 
     .stats {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(4, 1fr);
     }
 
     .stat-box {
-        height: 180px;
+        height: 160px;
     }
 
     .stat-box h2 {
@@ -3953,14 +3953,14 @@ header.scrolled {
     }
 
     .stats {
-        grid-template-columns:1fr;
-        gap:16px;
-        padding:40px 5%;
+        grid-template-columns:repeat(4, 1fr);
+        gap:8px;
+        padding:30px 3%;
     }
 
     .stat-box {
         height:auto;
-        padding:20px;
+        padding:14px 6px;
     }
 
     .cta-content h2 {
