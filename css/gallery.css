@@ -287,6 +287,14 @@
     .gallery-item--wide {
         grid-column: span 2;
     }
+
+    .gallery-filters {
+        display: none !important;
+    }
+    .filter-select {
+        display: block;
+        margin: 0 auto;
+    }
 }
 
 @media(max-width: 480px) {
@@ -303,12 +311,6 @@
         grid-row: span 1;
     }
 
-    .gallery-filters {
-        gap: 6px;
-        margin-bottom: 24px;
-        flex-wrap: wrap;
-    }
-
     .gallery-filter {
         padding: 12px 22px;
         font-size: 13px;
@@ -322,7 +324,6 @@
 @media(max-width:400px) {
     .gallery-section { padding: 30px 4%; }
     .gallery-grid { grid-auto-rows: 160px; gap: 8px; }
-    .gallery-filters { gap: 4px; margin-bottom: 18px; }
     .gallery-filter { padding: 10px 18px; font-size: 12px; letter-spacing: 1px; }
     .gallery-placeholder p { font-size: 10px; }
     .gallery-icon { font-size: 24px; margin-bottom: 6px; }
