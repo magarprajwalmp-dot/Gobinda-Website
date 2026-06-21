@@ -710,6 +710,27 @@ header.scrolled .schedule-btn {
     letter-spacing:2px;
 }
 
+.testimonial-author {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.testimonial-avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--primary-color), #d4a055);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    flex-shrink: 0;
+}
+
 @media(max-width:992px){
 
     .testimonial-grid{
