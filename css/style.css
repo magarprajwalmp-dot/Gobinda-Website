@@ -318,7 +318,7 @@ nav .nav-links a.active::after{
 
 .hero-right {
     position:relative;
-    border-radius: 50%;
+    border-radius: 24px;
     transition: filter 0.6s ease,
                 transform 0.8s cubic-bezier(0.34, 1.56, 0.64, 1);
     filter: brightness(1) contrast(1);
@@ -330,7 +330,7 @@ nav .nav-links a.active::after{
     inset:0;
     background:rgba(0,0,0,0.2);
     z-index:1;
-    border-radius: 50%;
+    border-radius: 24px;
     pointer-events:none;
 }
 
@@ -343,7 +343,7 @@ nav .nav-links a.active::after{
     content: '';
     position: absolute;
     inset: 0;
-    border-radius: 50%;
+    border-radius: 24px;
     background: linear-gradient(135deg, transparent 50%, rgba(202,131,55,0.15));
     pointer-events: none;
 }
@@ -352,7 +352,7 @@ nav .nav-links a.active::after{
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 50%;
+    border-radius: 24px;
     box-shadow: 0 30px 60px rgba(0,0,0,0.15);
     animation:imgReveal 2s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
 }
@@ -4084,7 +4084,7 @@ html, body {
 
     .hero { padding: 12px 12px 30px; gap: 16px; }
     .hero-left h1 { font-size: 32px; }
-    .hero-right { height: 260px; border-radius: 50%; }
+    .hero-right { height: 260px; border-radius: 20px; }
     .description { font-size: 15px; margin-top: 16px; }
     .buttons { margin-top: 24px; gap: 12px; }
     .primary-btn { padding: 14px 20px; font-size: 12px; }
