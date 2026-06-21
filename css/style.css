@@ -392,16 +392,26 @@ nav .nav-links a.active::after{
     }
 }
 
-@keyframes iconGlow {
-    0%, 100% {
+@keyframes iconPremium {
+    0% {
         background: linear-gradient(135deg, var(--primary-color), #d4a055);
         box-shadow: 0 0 20px rgba(202,131,55,0.3);
-        transform: scale(1);
+        transform: scale(1) rotate(0deg);
     }
-    50% {
-        background: linear-gradient(135deg, #e8c076, #f0d090);
-        box-shadow: 0 0 40px rgba(232,192,118,0.6);
-        transform: scale(1.1);
+    35% {
+        background: linear-gradient(135deg, var(--secondary-color), #3a5cb8);
+        box-shadow: 0 0 45px rgba(34,60,133,0.5);
+        transform: scale(1.15) rotate(-10deg);
+    }
+    65% {
+        background: linear-gradient(135deg, var(--primary-color), #e8c076);
+        box-shadow: 0 0 55px rgba(202,131,55,0.6);
+        transform: scale(1.08) rotate(5deg);
+    }
+    100% {
+        background: linear-gradient(135deg, var(--primary-color), #d4a055);
+        box-shadow: 0 0 20px rgba(202,131,55,0.3);
+        transform: scale(1) rotate(0deg);
     }
 }
 
@@ -463,7 +473,7 @@ header.scrolled .schedule-btn {
 }
 
 .stat-box:hover .stat-icon {
-    animation: iconGlow 1.2s ease-in-out infinite;
+    animation: iconPremium 1s ease-in-out infinite;
 }
 
 .stat-box:last-child {
