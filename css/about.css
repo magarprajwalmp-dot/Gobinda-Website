@@ -255,6 +255,10 @@
     align-items:start;
 }
 
+.about-timeline-img-mobile {
+    display: none;
+}
+
 .stats-group {
     display:flex;
     flex-direction:column;
@@ -478,6 +482,15 @@
     .stats-timeline-grid {
         grid-template-columns:1fr;
         gap:50px;
+    }
+    .about-timeline-img-mobile {
+        display: block;
+    }
+    .about-timeline-img-mobile img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 16px;
     }
     .about-timeline-col {
         padding-left:0;
