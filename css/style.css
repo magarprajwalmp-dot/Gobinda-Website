@@ -1886,9 +1886,9 @@ header.scrolled .schedule-btn {
 }
 
 @media(max-width: 768px) {
-    .filter-tags,
-    .gallery-filters {
-        display: none;
+    .filter-bar .filter-tags,
+    .filter-bar .gallery-filters {
+        display: none !important;
     }
     .filter-select {
         display: block;

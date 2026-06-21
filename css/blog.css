@@ -409,7 +409,7 @@
         margin-bottom: 30px;
     }
 
-    .filter-tags {
+    .filter-bar .filter-tags {
         display: none !important;
     }
     .filter-select {

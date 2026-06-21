@@ -288,7 +288,7 @@
         grid-column: span 2;
     }
 
-    .gallery-filters {
+    .filter-bar .gallery-filters {
         display: none !important;
     }
     .filter-select {
