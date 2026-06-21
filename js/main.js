@@ -190,10 +190,10 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!container || !target || window.innerWidth <= 992) return;
         container.addEventListener('mousemove', e => {
             const rect = container.getBoundingClientRect();
-            const x = (e.clientX - rect.left) / rect.width;
-            const y = (e.clientY - rect.top) / rect.height;
+            const x = Math.max(0, Math.min(1, (e.clientX - rect.left) / rect.width));
+            const y = Math.max(0, Math.min(1, (e.clientY - rect.top) / rect.height));
             target.style.transform =
-                `rotateY(${(x - 0.5) * 12}deg) rotateX(${(0.5 - y) * 8}deg)`;
+                `rotateY(${(x - 0.5) * 5}deg) rotateX(${(0.5 - y) * 3}deg)`;
         });
         container.addEventListener('mouseleave', () => {
             target.style.transform = 'rotateY(0deg) rotateX(0deg)';
